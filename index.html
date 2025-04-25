@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Grid Stránka</title>
+  <!-- Flexbox Grid CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    .box {
+      background: #e0e0e0;
+      padding: 20px;
+      margin: 10px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    header, footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hlavička -->
+  <header>
+    <h1>Moje stránka s Flexbox Grid</h1>
+  </header>
+
+  <div class="container">
+    <!-- První řádek: 3 sloupce -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="box">Sloupec 1</div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="box">Sloupec 2</div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="box">Sloupec 3</div>
+      </div>
+    </div>
+
+    <!-- Druhý řádek: 8 a 4 dílky -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+        <div class="box">8 dílků</div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="box">4 dílky</div>
+      </div>
+    </div>
+
+    <!-- Třetí řádek: čtyři stejně široké sloupce -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-3">
+        <div class="box">1</div>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="box">2</div>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="box">3</div>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <div class="box">4</div>
+      </div>
+    </div>
+
+    <!-- Zarovnání obsahu -->
+    <div class="row start-sm">
+      <div class="col-xs-12 col-sm-4">
+        <div class="box">Start</div>
+      </div>
+    </div>
+    <div class="row center-sm">
+      <div class="col-xs-12 col-sm-4">
+        <div class="box">Center</div>
+      </div>
+    </div>
+    <div class="row end-sm">
+      <div class="col-xs-12 col-sm-4">
+        <div class="box">End</div>
+      </div>
+    </div>
+
+    <!-- Offset -->
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-sm-offset-2">
+        <div class="box">Offset o 2</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Layout: hlavička, 2 sloupce, patička -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="box">HLAVIČKA</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8">
+        <div class="box">Hlavní obsah</div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="box">Postranní panel</div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="box">PATIČKA</div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Moje stránka</p>
+  </footer>
+
+</body>
+</html>
